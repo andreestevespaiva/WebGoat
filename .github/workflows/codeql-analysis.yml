@@ -29,6 +29,8 @@ jobs:
       contents: read
       security-events: write
 
+  workflow_dispatch:
+  
     strategy:
       fail-fast: false
       matrix:
