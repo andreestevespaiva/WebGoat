@@ -19,6 +19,7 @@ on:
     branches: [ develop ]
   schedule:
     - cron: '21 23 * * 6'
+  workflow_dispatch:
 
 jobs:
   analyze:
@@ -29,7 +30,7 @@ jobs:
       contents: read
       security-events: write
 
-  workflow_dispatch:
+  
   
     strategy:
       fail-fast: false
